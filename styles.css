@@ -14,10 +14,10 @@ h2{
     margin-bottom: 10px;
 }
 
-.page {
+/* .page {
     display: flex;
     flex-wrap: wrap;
-}
+} */
 .container {
     width: 100%;
     position: relative;
