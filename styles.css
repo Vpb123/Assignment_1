@@ -168,14 +168,7 @@ form input{
     }
     .fees{
     margin-left: 150px;
-    flex-direction:column
-    }
-    .f3{
-        width:70%;
-    }
-    .f4{
-        width:auto;
-        
+    flex-direction:column;
     }
     
 }
@@ -195,12 +188,5 @@ form input{
     form input{
         width:40px;
     }
-    .f3{
-        width:70%;
-    }
-    .f4{
-        width:auto;
-        
-    }  
 }
 
