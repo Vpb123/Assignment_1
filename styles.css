@@ -5,28 +5,31 @@
   }
 
 body {
-    font-family: 'Poppins';
+    font-family: Poppins;
 }
 
 h2{
     font-weight: bolder;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-
+.fees-calculator h4{
+    font-weight: bolder;
+    margin-bottom:25px;
+}
 /* .page {
     display: flex;
     flex-wrap: wrap;
 } */
-.container {
+.uae-image {
     width: 100%;
     position: relative;
     top:0;
     left:0;
-    margin-bottom:40px;
+    margin-bottom:50px;
 }
 
-.container img{
+.uae-image img{
     width: 100%;
     height:auto;
 }
@@ -37,25 +40,27 @@ h2{
     margin:0 30px;
 }
 
-.sec1 p{
+.app-info p{
     font-weight:bolder;
     text-align: inherit;
     clear: both;
-
+    font-size:1rem;
+    color:#474f62;
 }
-.sec2 p{
-    font-weight:bold;
+.apply-procedure p{
+    font-weight:normal;
+    font-size:1rem;
     text-align: left;
     margin-bottom: 30px;
-    color:rgb(138, 141, 148);
+    color:#7c8392;
 }
-.sec2 h3{
+.apply-procedure h3{
     font-weight: bolder;
-    color:rgb(94, 111, 122);
-    margin-bottom: 30px;
+    color:#41485c;
+    margin-bottom: 20px;
 }
 
-.fees{
+.fees-calculator{
     display:flex;
     justify-content:flex-start;
     flex-direction: column;
@@ -66,68 +71,80 @@ h2{
 figure img, figcaption{
     float:left;
     margin-bottom:20px;
-    color:rgb(169, 177, 184);
+    color:#7e8493;
     font-size:14px;
     padding-right: 5px;
+    font-weight: bold;
 }
 
 form{
     display:flex;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
 }
 
 form div{
     display: flex;
     flex-direction: column;
-    margin-bottom:20px;
+    margin-bottom:10px;
 }
 
-form  .f4{
+form  .calbtn{
     flex-direction: row;
 }
 
-form select, input, button{
-    height: 35px;
+form select, input{
+    height: 30px;
     font-weight: bold;
     border-radius: 3px;
-    border: 1px solid #D6D9DC;
+    border: 1px solid #838383;
+}
+form button{
+   height: 60%;
+   padding:0 1px;
+   font-weight:bold;
+   font-size: 1rem;   
 }
 
 form input{
-    width: 50px;
-    font-size:large;
+    width: 80px;
+    font-size:1.5rem;
     text-align: center;
     float:right;
+    margin:0 5px;
 }
 
 .fee-structure{
-    background-color: rgb(241, 241, 241);
+
+    background-color: #f2f4f8;
     display: flex;
     flex-direction: column;
     margin-bottom:10px;
+    margin-top: 15px;
+    color: #4d5466;
 }
 .fee-structure div{
     display:flex;
     justify-content:space-between;
-    padding:25px 12px;
+    padding:25px 20px 15px 20px;
 }
 
 .btn{
-    font-size: 16px;
-    font-weight: bold;
-    box-shadow: 0 1px 0 1px black;
-    color: #FFFFFF;
-    background-color: #2275d4;
-    text-align:center;
+    margin-top:20px;
+    font-size: 12px;
+    font-weight: normal;
     border: none;
+    box-shadow:2px 2px #164799;
+    color: #FFFFFF;
+    background-color: #286cec;
+    text-align:center;
     border-radius: 3px;
     padding: 10px 40px;
     cursor: pointer;
     width: 100%;
 }
 
-.fees form{
+.fees-calculator form{
     display:flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -135,52 +152,65 @@ form input{
 
 }
 
-.f1, .f2{
-    width:45%;
+.country
+{
+    width:55%;
 }
-.f3{
-    width:70%;
+ .visa-type{
+    width:35%;
 }
-.f4{
+.no-days{
+    width:50%;
+}
+.calbtn{
     width:auto;
+    margin-top:15px;
+    align-items: center;
     
 }
   
 
 @media only screen and (min-width: 961px) {
-    .container img{
-        height:250px;
+   
+    .uae-image img{
+        height: 310px;
     }
     .content{
        flex-direction: row;
-       margin:0 150px 0 120px;
+       margin:0 120px 0 160px;
        
     }
-    .main, .fees{
+    .main, .fees-calculator{
         width:50%;
       
     }
-    .fees{
-        margin-left: 150px;
+    .fees-calculator{
+        margin-left: 170px;
         flex-direction:column;
+    }
+    .no-days{
+        width:70%;
     }
     
 }
 
 
 @media only screen and (min-width: 601px ) and (max-width: 960px) {
-    .container img{
-        height:250px;
+    .uae-image img{
+        height: 406px;
     }
     .content{
         flex-direction: column;
         margin:0  50px 0 50px;
     }
-    .main, .fees{
-        width:100%
+    .main, .fees-calculator{
+        width:100%;
     }
     form input{
         width:40px;
+    }
+    .no-days{
+        width:70%;
     }
 }
 

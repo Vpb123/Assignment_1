@@ -10,13 +10,13 @@
 </head>
 
 <body>
-    <header class='container'>
+    <header class='uae-image'>
         <img src="images/uae.png" alt="UAE IMAGE">
     </header>
 
     <div class='content'>
         <div class="main">
-            <section class="sec1">
+            <section class="app-info">
                 <h2>UAE-Online</h2>
                 <figure>
                     <img src="images/price.png" alt="Price">
@@ -32,7 +32,7 @@
                 <hr style=" margin:30px 0;">
             </section>
 
-            <section class="sec2">
+            <section class="apply-procedure">
                 <h3>How to apply and pay</h3>
                 <p>
                     Applications can be made a maximum of 58 days of minimum of 24 hours prioe to travel.
@@ -44,10 +44,10 @@
             </section>
         </div>
 
-        <div class='fees'>
-            <h3 style="font-weight: bold;margin-bottom:20px;">Calculate Fee</h3>
+        <div class='fees-calculator'>
+            <h4>Calculate Fee</h4>
             <form action="">
-                <div class="f1">
+                <div class="country">
                     <label for='travelling-from'>Travelling from</label>
                     <select id='travelling-from' name='travelling-from'>
                         <option value='IN'>India</option>
@@ -56,8 +56,15 @@
                         <option value='UK'>United Kingdom</option>
                     </select>
                 </div>
-
-                <div class="f2">
+                <div class="visa-type">
+                    <label for='visa-type'>Visa Type</label>
+                    <select id='visa-type' name='visa-type'>
+                        <option value='tourist'>Tourist</option>
+                        <option value='work'>Work</option>
+                        <option value='student'>Student</option>
+                    </select>
+                </div>
+                <div class="no-days">
                     <label for='days'>Applying for</label>
                     <select id='days' name='days'>
                         <option value=1>1 Day</option>
@@ -67,19 +74,12 @@
                     </select>
                 </div>
                     
-                <div class="f3">
-                    <label for='visa-type'>Visa Type</label>
-                    <select id='visa-type' name='visa-type'>
-                        <option value='tourist'>Tourist</option>
-                        <option value='work'>Work</option>
-                        <option value='student'>Student</option>
-                    </select>
-                </div>
+              
 
-                <div class="f4"style="margin-top:15px;">            
-                    <button >+</button>  
-                    <input type="number" value="1">
-                    <button >-</button>         
+                <div class="calbtn">     
+                    <button >-</button>  
+                    <input type="number" value="1">      
+                    <button >+</button>     
                 </div>
             
 
