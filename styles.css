@@ -196,9 +196,7 @@ form input{
 
 
 @media only screen and (min-width: 601px ) and (max-width: 960px) {
-    .uae-image img{
-        height: 406px;
-    }
+   
     .content{
         flex-direction: column;
         margin:0  50px 0 50px;
